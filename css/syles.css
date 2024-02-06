@@ -99,8 +99,7 @@ nav li:first-child {
     font-family: Poppins, sans-serif;
     font-size: 18px;
     text-align: justify;
-    line-height: 185%;
-
+    line-height: 105%;
 }
 
 @media (max-width: 800px) {
