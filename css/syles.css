@@ -3,13 +3,20 @@
 *::after{
     margin: 0;
     padding: 0;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+
+html {
+    height: 100%;
 }
 
 body {
-    min-height: 100vh;
+    min-height: 100%;
     background-image: url(/image/laptop-computer2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     background-position: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -74,6 +81,26 @@ nav li:first-child {
 
 .menu-btn {
     display: none;
+}
+
+.glass-container {
+    height: 520px;
+    width: 350px;
+    padding: 30px 50px;
+    background-color: rgba(255, 255, 255, 0.025);
+    backdrop-filter: blur(8px);
+    border-top: 1px solid rgba(255, 255, 255, 0.4);    
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.089);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: Poppins, sans-serif;
+    font-size: 18px;
+    text-align: justify;
+    line-height: 185%;
+
 }
 
 @media (max-width: 800px) {
