@@ -1,11 +1,13 @@
-* {
+*, 
+*::before, 
+*::after{
     margin: 0;
     padding: 0;
 }
 
 body {
     min-height: 100vh;
-    background-image: url(https://unsplash.com/photos/a-macbook-with-lines-of-code-on-its-screen-on-a-busy-desk-m_HRfLhgABo);
+    background-image: url(/image/laptop-computer2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -26,7 +28,7 @@ nav ul {
 }
 
 nav li {
-    height: 50px;
+    height: 50px;    
 }
 
 nav a {
@@ -38,8 +40,8 @@ nav a {
     color: black;
 }
 
-nav a:hover {
-    background-color: #24c56da1;
+nav a: hover {
+    background-color: #f0f0f0;
 }
 
 nav li:first-child {
@@ -51,21 +53,20 @@ nav li:first-child {
     top: 0;
     right: 0;
     height: 100vh;
-    width: 200px;
+    width: 250px;
     z-index: 999;
-    background-color: rgba(255, 255, 255, 0.2);    
+    background-color: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(10px);
-    box-shadow: -10px 0px 10px rgba(0, 0, 0, 0.1);
-    display: flex;
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
     flex-direction: column;
-    justify-content: flex-start;
     align-items: flex-start;
+    justify-content: flex-start;
 }
 
 .sidebar li {
     width: 100%;
 }
-
 
 .sidebar a {
     width: 100%;
